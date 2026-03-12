@@ -1,8 +1,7 @@
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection  # 這裡改回 streamlit_gsheets
+from st_gsheets_connection import GSheetsConnection
 import pandas as pd
 from datetime import datetime
-
 # --- 基礎設定 ---
 st.set_page_config(page_title="2026 雲端訂票系統", page_icon="🎫")
 TOTAL_TICKETS = 10
@@ -69,5 +68,6 @@ with st.expander("📊 查看即時銷售報表"):
         st.dataframe(df, use_container_width=True)
     else:
         st.write("目前尚無訂單紀錄。")
+
 
 
