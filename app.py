@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
+from st_gsheets_connection import GSheetsConnection
 import pandas as pd
 from datetime import datetime
 
@@ -69,3 +69,4 @@ with st.expander("📊 查看即時銷售報表"):
         st.dataframe(df, use_container_width=True)
     else:
         st.write("目前尚無訂單紀錄。")
+
