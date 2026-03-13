@@ -46,7 +46,7 @@ except Exception as e:
     st.stop()
 
 # --- 訂票邏輯 ---
-TOTAL_TICKETS = 10
+TOTAL_TICKETS = 10000
 
 # 確保「購買票數」欄位存在並計算
 try:
@@ -94,3 +94,4 @@ if not df.empty:
     st.dataframe(df, use_container_width=True)
 else:
     st.write("目前尚無訂購紀錄。")
+
